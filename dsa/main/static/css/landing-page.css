@@ -24,7 +24,7 @@ header.masthead {
     /*background: radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);*/
     background-size: cover;
     padding-top: 3rem;
-    padding-bottom: 8rem;
+    padding-bottom: 1rem;
     font-size: 1.5rem;
 }
 
@@ -60,7 +60,7 @@ header.masthead h1 {
     div.shar {
         background-repeat: no-repeat;
         margin-top: 0;
-        background-position-x: 0!important;
+        background-position-x: 0 !important;
     }
 }
 
@@ -169,6 +169,19 @@ footer.footer {
     text-align: right;
 }
 
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
 .my_center {
     flex: 1;
     display: flex;
@@ -184,6 +197,17 @@ footer.footer {
     text-transform: uppercase;
     text-align: left;
     color: #FFFFFF;
+}
+
+.normal_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
 
 }
 
@@ -207,4 +231,33 @@ footer.footer {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    div.flip_mobile {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    div.my_icon {
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    div.normal_text {
+            padding-right: 0;
+    }
+}
+
+.flip_mobile {
+    display: flex;
+}
+
+.my_icon {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
 }
