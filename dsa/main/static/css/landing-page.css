@@ -1,0 +1,210 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.3 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */
+
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    /*background: radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);*/
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    font-size: 1.5rem;
+}
+
+header.masthead .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+header.masthead h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+
+    button.my_btn {
+        font-size: 1.5rem;
+    }
+
+    div.shar {
+        background-repeat: no-repeat;
+        margin-top: 0;
+        background-position-x: 0!important;
+    }
+}
+
+.shar {
+    background-repeat: no-repeat;
+    margin-top: -300px;
+    background-position-x: 100px !important;
+    z-index: 0;
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+
+    .main_text {
+        padding-right: 5rem;
+    }
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.call-to-action {
+    position: relative;
+    background-color: #343a40;
+    background: url("../img/bg-masthead.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.call-to-action .overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.my_header {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.blue_bg {
+    background-color: #02084D;
+    color: white !important;
+}
+
+.montserrat {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    text-align: right;
+}
+
+.my_center {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.main_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.blue_gradient {
+    background: radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
+}
+
+.blue_gradient_neuro {
+    background-image: url("/static/img/Neuro.svg"), radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
+}
+
+.my_btn {
+    background: linear-gradient(99.06deg, #EF1F40 0%, #5F0BA0 100%);
+    border-radius: 24px;
+    margin: 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
