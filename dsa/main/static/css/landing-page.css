@@ -182,6 +182,13 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
 .my_center {
     flex: 1;
     display: flex;
@@ -239,6 +246,11 @@ h2 {
         flex-flow: column-reverse;
     }
 
+    div.no_flip_mobile {
+        display: flex;
+        flex-flow: column;
+    }
+
     div.my_icon {
         width: 150px;
         height: 150px;
@@ -246,13 +258,27 @@ h2 {
         background-repeat: no-repeat;
     }
     div.normal_text {
-            padding-right: 0;
+        padding-right: 0;
+    }
+
+    div.left_padding_mobile {
+        padding-left: 0;
     }
 }
 
 .flip_mobile {
     display: flex;
 }
+
+.no_flip_mobile {
+    display: flex;
+}
+
+div.left_padding_mobile {
+    padding-left: 1rem;
+    padding-right: 0;
+}
+
 
 .my_icon {
     width: 300px;
