@@ -44,7 +44,7 @@ header.masthead h1 {
 
 @media (min-width: 768px) {
     header.masthead {
-        padding-top: 10rem;
+        padding-top: 7rem;
         padding-bottom: 3rem;
         font-size: 2rem;
     }
