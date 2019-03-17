@@ -6580,7 +6580,9 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  /*background-color: #343a40 !important;*/
+    background: url("/static/img/Neuro.svg"), radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
+    color: white;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
