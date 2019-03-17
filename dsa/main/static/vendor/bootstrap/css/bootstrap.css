@@ -6570,7 +6570,8 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+    background: url("/static/img/Neuro.svg"), radial-gradient(1068.50px at 79.15% 50%,  #f8f9fa 0%,  #f8f9fa 100%);
+  /*background-color: #f8f9fa !important;*/
 }
 
 a.bg-light:hover, a.bg-light:focus,

@@ -61,6 +61,7 @@ header.masthead h1 {
         background-repeat: no-repeat;
         margin-top: 0;
         background-position-x: 0 !important;
+        opacity: 1;
     }
 }
 
@@ -68,7 +69,14 @@ header.masthead h1 {
     background-repeat: no-repeat;
     margin-top: -300px;
     background-position-x: 100px !important;
+    opacity: 0.5;
     z-index: 0;
+}
+
+@media (max-width: 768px) {
+    div.mobile_center {
+        text-align: center;
+    }
 }
 
 .showcase .showcase-text {
@@ -286,4 +294,14 @@ div.left_padding_mobile {
     background-size: contain;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
+}
+
+.card {
+    color: white;
+    background: radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
+    border-radius: 1rem;
+}
+
+.lilac {
+    color: #42E8E0;
 }
