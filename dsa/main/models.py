@@ -27,9 +27,10 @@ class Cohort(models.Model):
     days_and_time = models.TextField(default="Среда, Пятница с 19:00 до 22:00")
     price = models.IntegerField(default=120000)
     price_show = models.TextField(default="120 000 тенге<br>90 000 тенге при предоплате")
+    show = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.course.name + " " + str(self.start) + "-" + str(self.end)
+        return self.course.name + " " + str(self.start) + ", " + str(self.days_and_time)
 
 
 class Visitor(models.Model):
