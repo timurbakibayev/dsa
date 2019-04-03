@@ -244,6 +244,7 @@ h3 {
 
 .my_btn {
     background: linear-gradient(99.06deg, #EF1F40 0%, #5F0BA0 100%);
+    background-repeat: no-repeat;
     border-radius: 24px;
     margin: 1rem;
     font-family: Montserrat;

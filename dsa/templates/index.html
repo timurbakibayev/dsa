@@ -46,9 +46,22 @@
 <div id="contacts"></div>
 {% include "contacts.html" %}
 
+{% include "modals.html" %}
+
+
+
 <!-- Bootstrap core JavaScript -->
 <script src="/static/vendor/jquery/jquery.min.js"></script>
 <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+    let default_cohort = {{ default_cohort }};
+    {% if default_cohort > -1 %}
+        $(window).on('load', function () {
+            $('#courseModal{{ default_cohort}}').modal('show');
+        });
+    {% endif %}
+</script>
 
 </body>
 

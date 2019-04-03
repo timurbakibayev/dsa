@@ -18,7 +18,13 @@
                             {{ cohort.start }}
                         </div>
                         <div style="flex-flow: column; display: flex">
-                            <button class="btn my_btn" style="zoom: 0.5; margin-left: 3rem; margin-right: 3rem">
+{#                            <button class="btn my_btn" style="zoom: 0.5; margin-left: 3rem; margin-right: 3rem">#}
+{##}
+{#                            </button>#}
+                            <button type="button" class="btn my_btn"
+                                    style="zoom: 0.5; margin-left: 3rem; margin-right: 3rem"
+                                    data-toggle="modal"
+                                    data-target="#courseModal{{ cohort.id }}">
                                 Подробнее
                             </button>
                         </div>

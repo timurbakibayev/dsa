@@ -18,6 +18,9 @@ class Course(models.Model):
     def __str__(self):
         return self.code + ": " + self.name
 
+    def description_as_list(self):
+        return self.description.split('<br>')
+
 
 class Cohort(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
@@ -26,7 +29,8 @@ class Cohort(models.Model):
     duration = models.TextField(default="1 месяц")
     days_and_time = models.TextField(default="Среда, Пятница с 19:00 до 22:00")
     price = models.IntegerField(default=120000)
-    price_show = models.TextField(default="120 000 тенге<br>90 000 тенге при предоплате")
+    price_show = models.TextField(default="120 000 тенге")
+    price_show_line2 = models.TextField(default="90 000 тенге при предоплате")
     show = models.BooleanField(default=False)
 
     def __str__(self):
