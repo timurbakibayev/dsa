@@ -54,7 +54,7 @@ class Cohort(models.Model):
     show = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.course.name + " " + str(self.start) + ", " + str(self.days_and_time)
+        return self.course.name + " " + f"http://dsacademy.kz/?show={self.id}"
 
 
 class Visitor(models.Model):

@@ -34,6 +34,16 @@ def index(request):
         except Exception as e:
             pass
 
+    try:
+        property = Property.objects.filter(name="no_animation")[0]
+    except:
+        property = Property()
+        property.name = "no_animation"
+        property.value = "1"
+        property.save()
+
+    context["no_animation"] = property.value == "1"
+
     return render(request, "index.html", context)
 
 
@@ -111,5 +121,6 @@ def stat(request):
 
     print(df.head(10))
     print(df_date.tail(10))
+
 
     return render(request, "stats.html", context)

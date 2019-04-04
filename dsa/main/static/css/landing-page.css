@@ -314,3 +314,9 @@ div.left_padding_mobile {
 .lilac {
     color: #42E8E0;
 }
+
+.violet {
+  float: left;
+  background: blue;
+  margin: 0 20px 20px 0;
+}
