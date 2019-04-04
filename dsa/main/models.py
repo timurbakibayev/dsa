@@ -1,6 +1,25 @@
 from django.db import models
 
 
+class SiteStat(models.Model):
+    date = models.DateField(auto_created=True)
+    tag = models.TextField(default="direct")
+
+    def __str__(self):
+        return str(self.date) + ": " + str(self.tag)
+
+
+class Property(models.Model):
+    name = models.TextField(default="property1")
+    value = models.TextField(default="value1")
+
+    def __str__(self):
+        return self.name + " = " +self.value
+
+    class Meta():
+        verbose_name_plural = "Properties"
+
+
 class Image(models.Model):
     name = models.TextField(default="python")
     url = models.TextField(default="/static/img/courses/python.svg")
@@ -14,6 +33,7 @@ class Course(models.Model):
     image = models.ForeignKey(Image, on_delete=models.DO_NOTHING)
     name = models.TextField(default="Python для анализа данных")
     description = models.TextField(default="С самого нуля вы будете обучаться...")
+    google_forms = models.TextField(default="https://docs.google.com/forms/d/154PrmgPscbmq01MXtt2SugR8rAOgHc1Evdtt4g6cyTU")
 
     def __str__(self):
         return self.code + ": " + self.name

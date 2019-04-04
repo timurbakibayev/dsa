@@ -4,6 +4,7 @@ from main.models import Course
 from main.models import Cohort
 from main.models import Student
 from main.models import Visitor
+from main.models import Property
 
 default_images = [
     {"name": "python", "url": "/static/img/courses/python.svg"},
@@ -25,3 +26,4 @@ admin.site.register(Course)
 admin.site.register(Cohort)
 admin.site.register(Student)
 admin.site.register(Visitor)
+admin.site.register(Property)
