@@ -78,11 +78,36 @@ def stat(request):
 
     figure = plt.figure(figsize=(15,10))
 
+    old_files = join(settings.MEDIA_ROOT, "*.png")
+
+    os.system(f"rm {old_files}")
+    # print(old_files)
+
     path = join(settings.MEDIA_ROOT, filename)
-    context["file"] = f"/media/{filename}"
-    print("writing png", path)
+    context["files"] = []
+
+    context["files"].append(f"/media/{filename}")
+    plt.clf()
     plt.plot(df_date["date"],df_date["count"])
+    plt.title("Visits by dates")
     plt.savefig(path)
+
+    k = 0
+    for i in df["tag"].unique():
+        k += 1
+        df_date = pd.DataFrame({
+            "date": pd.date_range(start_date, end_date),
+        })
+        df1 = df[df["tag"] == i]
+
+        df_date["count"] = df_date["date"].astype(str).apply(lambda x: len(df1[df1["date"] == x]))
+        filename = f"{k}_{property.value}.png"
+        context["files"].append(f"/media/{filename}")
+        plt.clf()
+        plt.plot(df_date["date"],df_date["count"])
+        plt.title(i)
+        path = join(settings.MEDIA_ROOT, filename)
+        plt.savefig(path)
 
     print(df.head(10))
     print(df_date.tail(10))

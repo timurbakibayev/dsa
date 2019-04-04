@@ -14,10 +14,10 @@
     {% include "libraries.html" %}
 </head>
 
-<body>
-
-<img src="{{ file }}">
-
+<body style="zoom: 0.5">
+{% for file in files %}
+    <img src="{{ file }}">
+{% endfor %}
 </body>
 
 </html>
