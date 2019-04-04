@@ -26,13 +26,8 @@ def index(request):
         "default_cohort": default_cohort,
     }
 
-    properties = {"consultation_google_form": ""}
-
-    for key in properties:
-        try:
-            context[key] = Property.objects.get(name=key).value
-        except Exception as e:
-            pass
+    for property in Property.objects.all():
+        context[property.name] = property.value
 
     try:
         property = Property.objects.filter(name="no_animation")[0]

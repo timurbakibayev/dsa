@@ -130,6 +130,7 @@ header.masthead h1 {
 
 .testimonials .testimonial-item {
     max-width: 18rem;
+    margin: 3em;
 }
 
 .testimonials .testimonial-item img {
@@ -319,4 +320,12 @@ div.left_padding_mobile {
   float: left;
   background: blue;
   margin: 0 20px 20px 0;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: black;
 }

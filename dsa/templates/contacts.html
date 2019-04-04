@@ -7,18 +7,23 @@
                 </div>
                 <div class="col-md-4" style="padding-top: 2em">
                     <h1 style="text-align: left">Контакты</h1>
-                    <h2 style="text-align: left"><a href="tel:+7(707)7013741">+7 (707) 701 37 41</a></h2>
-                    <h2 style="text-align: left"><a href="mailto:info@geekpartners.ltd">info@geekpartners.ltd</a></h2>
+                    <h2 style="text-align: left"><a href="tel:{{ phone }}">{{ phone }}</a></h2>
+                    <h2 style="text-align: left"><a href="mailto:{{ email }}">{{ email }}</a></h2>
                     <h1 style="text-align: left"></h1>
                     <h1 style="text-align: left">Адрес</h1>
-                    <h2 style="text-align: left">БЦ Almaty Towers, SmArt point</h2>
-                    <h2 style="text-align: left">Ул. Байзакова, 280</h2>
+                    <h2 style="text-align: left">{{ address }}</h2>
+                    <h2 style="text-align: left">{{ address2 }}</h2>
                     <h1 style="text-align: left"></h1>
                     <h1 style="text-align: left">Мы в соцсетях</h1>
-                    <img src="/static/img/facebook.svg" onclick="window.location='https://www.facebook.com/dsacademykz'"
+                    <a href="https://www.facebook.com/dsacademykz">
+                    <img src="/static/img/facebook.svg"
                        >
-                    <img src="/static/img/instagram.svg" onclick="window.location='https://www.instagram.com/dsacademy.kz'"
+                        </a>
+                    <a href="https://www.instagram.com/dsacademy.kz">
+                    <img src="/static/img/instagram.svg"
                         >
+                        </a>
+
                 </div>
             </div>
         </div>
