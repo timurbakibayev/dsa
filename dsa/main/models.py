@@ -2,7 +2,7 @@ from django.db import models
 
 
 class SiteStat(models.Model):
-    date = models.DateField(auto_created=True)
+    date = models.DateTimeField(auto_now_add=True)
     tag = models.TextField(default="direct")
 
     def __str__(self):
@@ -62,14 +62,14 @@ class Visitor(models.Model):
     phone = models.TextField(default="+7",blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
     tag = models.TextField(default="instagram?")
-    date = models.DateTimeField(auto_created=True)
+    date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
 
 
 class Student(models.Model):
-    date = models.DateTimeField(auto_created=True)
+    date = models.DateTimeField(auto_now_add=True)
     name = models.TextField(default="ФИО")
     iin = models.TextField(max_length=15, blank=True, null=True)
     phone = models.TextField(default="+7",blank=True, null=True)

@@ -122,3 +122,6 @@ LANGUAGE_CODE = 'ru-RU'
 
 # Пример вывода: 16 сентября 2012
 DATE_FORMAT = 'd E Y'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
