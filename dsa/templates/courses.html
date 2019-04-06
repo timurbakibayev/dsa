@@ -1,7 +1,7 @@
 <section class="bg-light text-center montserrat" style="padding-top: 2rem; padding-bottom: 3rem">
     <div class="container">
         <div class="row no-gutters" style="margin-bottom: 2rem; margin-top: 2rem; flex-flow: column">
-            <h1>КУРСЫ</h1><br>
+            <h2>КУРСЫ</h2><br>
         </div>
         <div class="row no-gutters" style="justify-content: center">
             {% for cohort in cohorts %}
@@ -11,8 +11,8 @@
                             <img class="m-auto text-primary" style="zoom: 0.8; padding-top: 1rem"
                                  src="{{ cohort.course.image.url }}">
                         </div>
-                        <h1 style="padding: 1rem; padding-top:0; font-size: 1rem; height: 4rem">{{ cohort.course.name }}
-                        </h1>
+                        <h2 style="padding: 1rem; padding-top:0; font-size: 1rem; height: 4rem">{{ cohort.course.name }}
+                        </h2>
                         <div class="lilac montserrat"
                              style="padding: 1rem; padding-top:0; font-size: 1rem; text-align: center">Начало:
                             {{ cohort.start }}

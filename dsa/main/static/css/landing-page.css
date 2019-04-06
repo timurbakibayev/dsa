@@ -240,7 +240,7 @@ h3 {
 }
 
 .blue_gradient_neuro {
-    background-image: url("/static/img/Neuro.svg"), radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
+    background-image: url("/static/img/Neuro.png"), radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
 }
 
 .my_btn {

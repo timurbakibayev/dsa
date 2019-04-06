@@ -6570,7 +6570,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-    background: url("/static/img/Neuro.svg"), radial-gradient(1068.50px at 79.15% 50%,  #f8f9fa 0%,  #f8f9fa 100%);
+    background: url("/static/img/Neuro.png"), radial-gradient(1068.50px at 79.15% 50%,  #f8f9fa 0%,  #f8f9fa 100%);
   /*background-color: #f8f9fa !important;*/
 }
 
@@ -6582,7 +6582,7 @@ button.bg-light:focus {
 
 .bg-dark {
   /*background-color: #343a40 !important;*/
-    background: url("/static/img/Neuro.svg"), radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
+    background: url("/static/img/Neuro.png"), radial-gradient(1068.50px at 79.15% 50%, #02084D 0%, #040943 100%);
     color: white;
 }
 
