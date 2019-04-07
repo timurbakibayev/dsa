@@ -26,5 +26,6 @@ urlpatterns = static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + \
                   path('stat/', views.stat),
                   # path('<text>', views.index),
                   re_path(r'^(?P<course_name>\w*)$', views.index, name='index'),
+                  path('sitemap.txt', views.sitemap),
               ]
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from main.models import Cohort
 from main.models import Property
 from main.models import SiteStat
@@ -131,3 +131,9 @@ def stat(request):
 
 
     return render(request, "stats.html", context)
+
+
+def sitemap(request):
+    urls = ["https://dsacademy.kz/"+ i.url for i in Cohort.objects.filter(show=True)]
+    urls += ["https://dsacademy.kz"]
+    return HttpResponse("\n".join(urls))
