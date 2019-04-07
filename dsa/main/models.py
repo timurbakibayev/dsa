@@ -52,9 +52,10 @@ class Cohort(models.Model):
     price_show = models.TextField(default="120 000 тенге")
     price_show_line2 = models.TextField(default="90 000 тенге при предоплате")
     show = models.BooleanField(default=False)
+    url = models.TextField(default="short_url")
 
     def __str__(self):
-        return self.course.name + " " + f"http://dsacademy.kz/?show={self.id}"
+        return f"{self.course.name} http://dsacademy.kz/{self.url}"
 
 
 class Visitor(models.Model):

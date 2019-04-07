@@ -9,7 +9,8 @@ import matplotlib.pyplot as plt
 from os.path import join
 from dsa import settings
 
-def index(request):
+def index(request, course_name):
+    print("course name", course_name)
     default_cohort = -1
 
     site_stat = SiteStat()
@@ -17,7 +18,7 @@ def index(request):
     site_stat.save()
 
     try:
-        default_cohort = int(request.GET.get("show","-1"))
+        default_cohort = Cohort.objects.filter(show=True).filter(url=course_name)[0].id
     except:
         pass
 
@@ -25,6 +26,17 @@ def index(request):
         "cohorts": Cohort.objects.filter(show=True),
         "default_cohort": default_cohort,
     }
+
+
+
+
+    try:
+        Property.objects.filter(name="any_message")[0]
+    except:
+        property = Property()
+        property.name = "any_message"
+        property.value = "Курсы рассчитаны как на опытных программистов, так и на новичков без навыков программирования"
+        property.save()
 
     for property in Property.objects.all():
         context[property.name] = property.value

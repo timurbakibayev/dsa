@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 header.masthead {
@@ -71,7 +71,7 @@ header.masthead h1 {
 
 .shar {
     background-repeat: no-repeat;
-    margin-top: -300px;
+    margin-top: -350px;
     background-position-x: 100px !important;
     opacity: 0.5;
     z-index: 0;
@@ -245,7 +245,7 @@ h3 {
 
 .my_btn {
     background: linear-gradient(99.06deg, #EF1F40 0%, #5F0BA0 100%);
-    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
     border-radius: 24px;
     margin: 1rem;
     font-family: Montserrat;
