@@ -62,6 +62,7 @@ header.masthead h1 {
     }
 
     div.shar {
+        background: url('/static/img/Shar.svg');
         background-repeat: no-repeat;
         margin-top: 0;
         background-position-x: 0 !important;
@@ -70,6 +71,7 @@ header.masthead h1 {
 }
 
 .shar {
+    background: url('/static/img/Shar_no_anim.png');
     background-repeat: no-repeat;
     margin-top: -350px;
     background-position-x: 100px !important;
