@@ -13,13 +13,15 @@ default_images = [
     {"name": "excel", "url": "/static/img/courses/excel.svg"},
 ]
 
-for img in default_images:
-    if len(Image.objects.filter(name__contains=img["name"])) == 0:
-        image = Image()
-        image.name = img["name"]
-        image.url = img["url"]
-        image.save()
-
+try:
+    for img in default_images:
+        if len(Image.objects.filter(name__contains=img["name"])) == 0:
+            image = Image()
+            image.name = img["name"]
+            image.url = img["url"]
+            image.save()
+except:
+    pass
 
 # Register your models here.
 admin.site.register(Image)
