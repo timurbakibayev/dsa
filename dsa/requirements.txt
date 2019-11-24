@@ -1,5 +1,5 @@
 cycler==0.10.0
-Django==2.1.7
+Django==2.1.11
 gunicorn==19.9.0
 kiwisolver==1.0.1
 matplotlib==3.0.3
